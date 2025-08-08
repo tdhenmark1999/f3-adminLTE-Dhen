@@ -4,11 +4,6 @@
 include_once "restServerClass.php";
 
 
-//register the class wrapper for using as a JSON service
-$rest = new restServerClass();
-$rest->addServiceClass(new WebReports());
-$rest->handle();
-
 
 final class WebReports
 {
@@ -26,39 +21,67 @@ final class WebReports
             "message": {
                 "result": [
                     {
-                        "date": "2020-11-01 00:00:41",
+                        "date": "2020-10-01 00:00:41",
                         "imsi": "999990000000220",
                         "data [MB]": "0.13",
                         "iccid": "99999900000000002208",
-                        "carrier": "customer_name_LTE"
+                        "carrier": "Administrator_LTE"
                     },
                     {
-                        "date": "2020-11-01 00:01:31",
+                        "date": "2020-09-01 00:00:41",
+                        "imsi": "999990000000220",
+                        "data [MB]": "0.13",
+                        "iccid": "99999901000000002208",
+                        "carrier": "Administrator_LTE"
+                    },
+                    {
+                        "date": "2020-08-01 00:00:41",
+                        "imsi": "999990000000220",
+                        "data [MB]": "0.13",
+                        "iccid": "99999902000000002208",
+                        "carrier": "Administrator_LTE"
+                    },
+                    {
+                        "date": "2020-07-01 00:00:41",
+                        "imsi": "999990000000220",
+                        "data [MB]": "0.13",
+                        "iccid": "99999903000000002208",
+                        "carrier": "Administrator_LTE"
+                    },
+                    {
+                        "date": "2020-06-01 00:00:41",
+                        "imsi": "999990000000220",
+                        "data [MB]": "0.13",
+                        "iccid": "99999900000000002208",
+                        "carrier": "Administrator_LTE"
+                    },
+                    {
+                        "date": "2020-05-01 00:01:31",
                         "imsi": "999990000000220",
                         "data [MB]": "0.12",
                         "iccid": "99999900000000002208",
-                        "carrier": "customer_name_LTE"
+                        "carrier": "Administrator_LTE"
                     },
                     {
-                        "date": "2020-11-01 00:02:22",
+                        "date": "2020-04-01 00:02:22",
                         "imsi": "999990000000220",
                         "data [MB]": "0.11",
                         "iccid": "99999900000000002208",
-                        "carrier": "customer_name_LTE"
+                        "carrier": "Administrator_LTE"
                     },
                     {
-                        "date": "2020-11-01 00:03:12",
+                        "date": "2020-03-01 00:03:12",
                         "imsi": "999990000000220",
                         "data [MB]": "0.14",
                         "iccid": "99999900000000002208",
-                        "carrier": "customer_name_LTE"
+                        "carrier": "Administrator_LTE"
                     },
                     {
                         "date": "2020-11-01 00:04:09",
                         "imsi": "999990000000220",
                         "data [MB]": "0.16",
                         "iccid": "99999900000000002208",
-                        "carrier": "customer_name_LTE"
+                        "carrier": "Administrator_LTE"
                     },
                     {
                         "date": "2020-11-01 00:05:38",
@@ -787,7 +810,7 @@ final class WebReports
                     "customer": "Administrator"
                 },
                 {
-                    "customer": "customer_name"
+                    "customer": "Customer Name"
                 }
             ]
         }        
@@ -837,3 +860,7 @@ final class WebReports
     }
 
 }
+
+$rest = new restServerClass();
+$rest->addServiceClass(new WebReports());
+$rest->handle();

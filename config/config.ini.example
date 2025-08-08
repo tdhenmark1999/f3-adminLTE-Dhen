@@ -1,0 +1,9 @@
+[globals]
+
+AUTOLOAD=app/controllers/|app/models/
+UI=app/views/
+DEBUG=3
+DB_DSN="mysql:host=localhost;port=3306;dbname=appdb"
+DB_USER=root
+DB_PASS=dhenmark2019
+site="Demo Test Site"
